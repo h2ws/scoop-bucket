@@ -9,5 +9,5 @@
             "微信开发者工具"
         ]
     ],
-    "pre_install":   "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse" 
+    "pre_install":   [ "Copy-Item \"$dir\\`$APPDATA\\Tencent\"  \"$Env:AppData\" -Force -Recurse", "Remove-Item \"$dir\\`$PLUGINSDIR\" \"$dir\\`$APPDATA\" -Recurse" ]
 }
