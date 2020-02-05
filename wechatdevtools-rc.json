@@ -24,7 +24,7 @@
     "installer": {
         "script": [
             "$devtoolRoaming = \"$env:APPDATA\\Tencent\\微信开发者工具\"",
-            "if (Test-Path $nwPath) {",
+            "if (Test-Path $devtoolRoaming) {",
             "    Write-Output 'Removing old version %APPDATA%\\Tencent\\微信开发者工具'",
             "    Remove-Item -Path \"$devtoolRoaming\" -Recurse -Force",
             "}", 
