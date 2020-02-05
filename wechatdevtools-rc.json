@@ -13,7 +13,7 @@
    	         "hash": "d91abf9a057d9985e1a34c02a8f3df75c1f84719279e1eaf8b3f70f32e6ab4a8"
    	     }
   	  },
-	"bin": "app\\微信开发者工具.exe", 
+	"bin": ["app\\微信开发者工具.exe", [ "app\\微信开发者工具.exe", "wechatdevtool-rc" ]], 
  "shortcuts": [
         [
             "app\\微信开发者工具.exe",
