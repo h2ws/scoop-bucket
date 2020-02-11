@@ -28,7 +28,7 @@
             "    Write-Output 'Removing old version %APPDATA%\\Tencent\\微信开发者工具'",
             "    Remove-Item -Path \"$devtoolRoaming\" -Recurse -Force",
             "}", 
-            "Move-Item \"$dir\\app\\`$APPDATA\\*\" \"$env:APPDATA\\\" -Force",
+            "Move-Item \"$dir\\app\\$env:APPDATA\\*\"    \"$env:APPDATA\\\" -Force",
             "# Cleanup useless files",
             "@('$APPDATA', '$PLUGINSDIR', '卸载微信开发者工具.exe.nsis') | ForEach-Object {",
             "    Remove-Item \"$dir\\app\\$_\" -Recurse -Force",
